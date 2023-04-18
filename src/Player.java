@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Player {
 
-    String Name;
-    int Health = 20;
-    int level = 1;
+    private String Name;
+    private int Health = 20;
+    private int level = 1;
 
-    int x = 4;
-    int y = 5;
+    private int x = 4;
+    private int y = 5;
 
     // Setters y Getters
 
@@ -42,6 +42,15 @@ public class Player {
     public void setY(int y) {
         this.y = y;
     }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+    
 
     // Constructor
 
@@ -89,6 +98,7 @@ public class Player {
     public static void printPlayerStats(Player pj){
         System.out.println("Name: " + pj.getName());
         System.out.println("Health: " + pj.getHealth());
+        System.out.println("Level: " + pj.getLevel());
         System.out.println("X: " + pj.getX());
         System.out.println("Y: " + pj.getY());
     }
@@ -108,5 +118,7 @@ public class Player {
         }
         
     }
+
+    
 
 }
