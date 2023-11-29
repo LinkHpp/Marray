@@ -2,9 +2,9 @@ public class Cartel {
 
     // Atributos
 
-    String Texto = "Esto es un texto predeterminado de el juego";
-    int x;
-    int y;
+    private String Texto = "Esto es un texto predeterminado de el juego";
+    private int x;
+    private int y;
 
     // Setters y Getters
 
